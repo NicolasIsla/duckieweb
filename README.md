@@ -12,6 +12,7 @@ Jekyll sirve para montar sitios web estáticos en nuestro propio servidor local.
 
 # Cómo empezar
 
+-QUITAR
 La versión ROS utilizada por los duckiebots es **kinetic** por lo que en la terminal de tu bot deberás instalar esta versión de ROS Bridge mediante el comando:
 ```bash
 sudo apt-get install ros-kinetic-rosbridge-suite
@@ -27,6 +28,7 @@ Una vez instalado ROS Bridge y los requisitos, hacer un pull de este repositorio
 ```bash
 git clone https://github.com/KratoSeba/duckieweb
 ```
+-QUITAR
 
 Hecho esto dirígete a la carpeta mediante la terminal y ejecuta:
 
@@ -38,8 +40,8 @@ Una vez corriendo el servidor local, abre [http://localhost:4000/](http://localh
 
 # Demo
 
-Dentro de la ruta */demo* se encuentra un archivo llamado **simulador.py** que busca simular un duckiebot local y así poder visualizar su velocidad linear y angular en tiempo real.
-La idea es ejecutar **roscore** y **ROS Bridge** en el PC de igual forma como si de un Duckiebot se tratara.
+Dentro de la ruta */demo* se encuentra un archivo llamado **simulador.py** que busca simular un duckiebot local y así poder visualizar su velocidad lineal y angular en tiempo real.
+---La idea es ejecutar **roscore** y **ROS Bridge** en el PC de igual forma como si de un Duckiebot se tratara.---
 Luego en la carpeta mencionada escribe:
 ```bash
 python2.7 simulador.py
