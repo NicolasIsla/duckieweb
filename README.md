@@ -1,7 +1,7 @@
 # DuckieWeb
 
 ## ¿Qué es DuckieWeb?
-DuckieWeb es un proyecto que busca monitorear tanto el estado de Duckietown como de sus Duckiebots representando todos sus datos en una interfaz web que sea simple y agradable visualmente para el usuario.
+DuckieWeb es un proyecto que busca monitorear el estado de Duckietown, tanto de sus Duckiebots como del simulador, representando todos sus datos en una interfaz web que sea simple y agradable visualmente para el usuario.
 
 Este repositorio pretende guiar el proceso para poner en funcionamiento el monitoreo web de la ciudad Duckietown.
 
