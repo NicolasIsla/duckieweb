@@ -83,7 +83,7 @@ http://duckietown.cl
 
 
 
-<!-- ### Main commands
+
 
 # Screenshots
 |   |   |   |
@@ -97,4 +97,4 @@ http://duckietown.cl
 |<img src="http://i.imgur.com/zqq3mBO.jpg" width="275">|<img src="http://i.imgur.com/uHuBn2h.jpg" width="275">|<img src="http://i.imgur.com/ymBSpIG.jpg" width="275">|
 |Sales|Match blue team|Match red team|
 
-Screenshots reorganized by [@mathieuzen](https://github.com/mathieuzen/)   -->
+Screenshots reorganized by [@mathieuzen](https://github.com/mathieuzen/)  
