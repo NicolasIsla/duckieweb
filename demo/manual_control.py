@@ -110,7 +110,9 @@ def update():
 
         im.save('screen.png')
 
-    actionMsg = str(action)
+    lineal = str(action[0])
+    angular = str(action[1])
+    actionMsg = (lineal+","+angular)
     if done:
         print('done!')
         env.reset()
