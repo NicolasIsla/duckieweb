@@ -12,7 +12,7 @@ Anaconda es una distribución de Python que cuenta con un gestor de paquetes y u
 sistema de gestión de entornos virtuales llamado Conda. Esto permite manejar distintas
 versiones de softwares y librerías sin que interfieran con las demás cosas que contenga el PC de trabajo.
 
-###[instalar Gym-Duckietown](https://www.yumpu.com/en/document/read/65121377/guia-instalacion-duckietown)
+### [Instalar Gym-Duckietown](https://www.yumpu.com/en/document/read/65121377/guia-instalacion-duckietown)
 Pasos a seguir para instalar conda y crear el enviroment de **gym-duckietown**.
 
 ### [Jekyll](https://jekyllrb.com/docs/installation/)
@@ -34,11 +34,12 @@ Una vez corriendo el servidor local, abre [http://localhost:4000/](http://localh
 # Demo
 
 Dentro de la ruta */demo* se encuentra un archivo llamado **simulador.py** que busca simular un duckiebot local y así poder visualizar su velocidad lineal y angular en tiempo real.
+
 Se debe activar el enviroment de Duckietown.
 ```bash
 conda activate gym-duckietown
 ``` 
-Luego dirigirse a la carpeta de Demo, para activar el simulador.
+Luego dirigirse a la carpeta de Demo para activar el simulador.
 ```bash
 python simulador.py --env-name Duckietown-udem1-v0
 ```
@@ -70,10 +71,13 @@ A todo el equipo de Duckietown Chile
 http://duckietown.cl
 
 
-# Autores de Duckietown-simulador:
-**Christopher Marin
-Joaquín Uribe
-Nicolás Isla**
+## Autores de Duckietown-simulador:
+
+**Christopher Marin**
+
+**Joaquín Uribe**
+
+**Nicolás Isla**
 
 
 
