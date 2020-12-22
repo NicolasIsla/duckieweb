@@ -24,7 +24,10 @@ function cargarVistaPatos(){
 	$("#listaPatos").text("");
 	$("#listaPatos").append('<li><div class="form-inline"><img src="/img/off.png"/><div class="cajaNombrePatoLista" id='+"Simulador"+'>'+'<div class="F">'+"Simulador"+'</div></div><div class="float-right X" id='+"Simulador"+'X>X</div></div></li>'); //mostrar lista patos
 	$("#Simulador").click(function() {
-		conectarPato();
+		if(!getEstado()){
+			console.log("hola")
+			conectarPato();
+		}
 	});
 
 	$("#SimuladorX").click(function() {

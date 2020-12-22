@@ -1,4 +1,5 @@
 let socket = null;
+var estado = false;
 
 function conectarPato(){
 
@@ -6,6 +7,7 @@ function conectarPato(){
 	socket = new WebSocket(address);
 	socket.onopen =function(e){
 		alert("Conectado");
+		estado = true;
 		$("#Simulador").prev().attr("src", "/img/on.png");
 	}
 	socket.onmessage = function(event){	
@@ -39,6 +41,7 @@ function desconectarPato(){
 	if(socket!= null){
 		socket.onclose = function(e){
 			alert("Desconectado");
+			estado = false
 			$("#Simulador").prev().attr("src", "/img/off.png"); // Apagar luz
 
 			//Coloca en default la velocida y las barras
@@ -61,4 +64,8 @@ function separarVelocidad(string){
 	var angular = separado[1]
 	var velocidades = [lineal, angular]
 	return velocidades
+}
+
+function getEstado(){
+	return estado;
 }
