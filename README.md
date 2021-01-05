@@ -45,9 +45,6 @@ python simulador.py --env-name Duckietown-udem1-v0
 ```
 Finalmente en la página clickear en **"Simulador"** para conectarte y **"X"** para desconectarte.
 
-### Video Demostración
-
-
 # Ideas a Futuro
 
 - Página responsiva
@@ -71,7 +68,7 @@ A todo el equipo de Duckietown Chile
 http://duckietown.cl
 
 
-## Autores de Duckietown-simulador:
+## Autores del Monitoreo Web DuckieGym:
 
 **Christopher Marin**
 
@@ -85,5 +82,6 @@ http://duckietown.cl
 
 
 # Screenshots
-|   |   |   |
+| https://prnt.sc/wgub9l  | 
+| https://prnt.sc/wgubrk  |
 
