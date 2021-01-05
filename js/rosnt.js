@@ -5,19 +5,21 @@ function conectarPato(){
 
 	address = 'ws:/localhost:8765'
 	socket = new WebSocket(address);
-	socket.onopen =function(e){
+	socket.onopen = function(e){
 		alert("Conectado");
 		estado = true;
-		$("#Simulador").prev().attr("src", "/img/on.png");
+		$("#Simulador").prev().attr("src", "/img/on.png"); //Encender luz
 	}
 	socket.onmessage = function(event){	
 
 		lineal = separarVelocidad(event.data)[0]
 		angular = separarVelocidad(event.data)[1]
 
-		$("#quacklometers").text(Math.trunc(lineal*100)/100); // Editar valor bruto
+		//Edita valores mostrados en la pagina
+		$("#quacklometers").text(Math.trunc(lineal*100)/100);
 		$("#quackdianes").text(Math.trunc(angular*-100)/100);
 
+		//Manejo de barras de velocidad
 		angular /= 8.0;
 
 		ho = (120 - Math.abs(angular)*120).toString(); // HSL
@@ -44,7 +46,7 @@ function desconectarPato(){
 			estado = false
 			$("#Simulador").prev().attr("src", "/img/off.png"); // Apagar luz
 
-			//Coloca en default la velocida y las barras
+			//Coloca en default la velocida y las barras al desconectar
 			$("#indicadorV").css({"top" : 50+"%", "background-color" : "black"});
 			$("#indicadorH").css({"margin-left" : 50+"%", "background-color" : "black"});
 			$("#barraV").css({"background-color" : "hsl("+120+", 100%, 35%)"});
@@ -57,7 +59,7 @@ function desconectarPato(){
 }
 
 
-
+//Separa los valores lineales y angulares 
 function separarVelocidad(string){
 	var separado = string.split(",");
 	var lineal = separado[0]

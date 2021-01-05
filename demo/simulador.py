@@ -120,6 +120,7 @@ def update():
 
     env.render()
 
+##Creacion del websocket
 async def connect(websocket, path):
     delta_time = 1.0 / env.unwrapped.frame_rate
     while keepRunning:
@@ -129,11 +130,10 @@ async def connect(websocket, path):
         wait = delta_time - spent
         await asyncio.sleep(wait)
 
-
+##funcion main del simulador
 async def startSimulator():
     delta_time = 1.0 / env.unwrapped.frame_rate
     
-
     while keepRunning:
         start = time.time()
         update()
@@ -145,6 +145,8 @@ async def startSimulator():
 loop  = asyncio.get_event_loop()
 keepRunning = True
 start_server = websockets.serve(connect, "localhost", 8765)
+
+##Creacion de los threads del simulador y del websocket
 asyncio.ensure_future(start_server)
 asyncio.ensure_future(startSimulator())
 
